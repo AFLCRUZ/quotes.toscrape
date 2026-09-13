@@ -27,3 +27,6 @@ for cita in citas:
 df = pd.DataFrame(datos)
 df.to_csv("catalogo_citas.csv", index=False)
 print("Scraping exitoso y archivo catalogo_citas.csv creado.")
+
+with open ("scraper_quotes.py","w",encoding="utf-8") as f:
+    f.write(script_code)
